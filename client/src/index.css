@@ -19,6 +19,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    justify-content: center;
 }
 .form__input {
     min-height: 20vh;

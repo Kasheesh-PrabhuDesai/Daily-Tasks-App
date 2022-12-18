@@ -10,8 +10,8 @@ const AddTask = ({ socket }:AddTaskProps) => {
 
     const handleAddTodo = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
-        //👇🏻 Logs the task to the console
-        console.log({ task });
+        //👇🏻 sends the task to the Socket.io server
+        socket.emit("createTask", { task });
         setTask("");
     };
     return (
